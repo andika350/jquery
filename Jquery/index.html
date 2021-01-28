@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		$("#button").click(function(){
+			$("p").hide();
+		});
+
+		$("#erase").click(function(){
+			$(this).hide();
+		});
+
+
+
+		$("#hover").mouseenter(function(){
+ 			 alert("You entered p1!");
+		});
+
+		$("#btn-hover").hover(function() {
+			console.log("HOLA")
+		}, function() {
+			console.log("BYE")
+		});
+
+		$("input").focus(function(){
+   			 $(this).css("background-color", "yellow");
+  		});
+
+  		$("input").blur(function(){
+    		$(this).css("background-color", "green");
+  		});
+
+	});
+
+	
+
+</script>
+<head>
+	<title>JQuery</title>
+</head>
+<body>
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<button id="button">hide p</button>
+
+
+<p id="erase">CLICK ME TO ERASE THIS PARAGRAPH!.</p>
+
+<p id="hover">mouse enter</p>
+
+<button id="btn-hover">HOVER</button>
+
+<input type="text" name="pass" id="input">
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
